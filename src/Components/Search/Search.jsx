@@ -28,7 +28,7 @@ const Search = ({ setContent, setLoading }) => {
 
 
   return (
-    <InputGroup w={'50vw'} mt={15} mb={35}>
+    <InputGroup w={window.innerWidth > 1200 ? '50vw' : '70vw'} mt={15} mb={35}>
       <Input placeholder='enter URL' textAlign={'center'} fontWeight={900} ref={inputRef} />
       <InputRightElement children={<SiOpensearch
         cursor={'pointer'}
