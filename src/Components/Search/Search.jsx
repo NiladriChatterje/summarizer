@@ -13,7 +13,7 @@ const Search = ({ setContent, setLoading }) => {
     const { data } = inputRef?.current?.value ? (await axios.get('https://article-extractor-and-summarizer.p.rapidapi.com/summarize', {
       params: {
         url: inputRef?.current?.value,
-        length: '6'
+        length: '3'
       },
       headers: {
         'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
